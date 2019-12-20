@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>친구가 되어줄래..?</title>
+
+	<style type="text/css">
+	@font-face { font-family: 'Sam3KRFont'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+	body{width: 100%; background-color: black; font-family: 'Sam3KRFont'; color: white; margin: 0;}
+	
+	#first{display: block; margin: auto; width: 30%; z-index: 5;}
+	#tt{font-size: 3em; text-align: center; margin-top: 300px; }
+	#introstart{width: 200px; padding: 5px; background-color: #ffa64f; font-size: 3em; color: black; border-radius: 10px; text-align: center; margin: 20%; margin-top: 10%;}
+	#startp{width: 300px; text-align: center; margin: 15%; margin-top: 5%; margin-bottom: 0;}
+	
+	#line{position: absolute; top: 0; left: 0; width: 1530px; height: 800px; border: 2px solid white; z-index: -1;}
+	</style>
+
+</head>
+<body>
+	<div id="first">
+		<p id="startp">하얀 선에 화면 크기를 맞춰주세요.</p>
+		<div id="tt"> <p>친구가 되어줄래..?</p></div>
+		<a href="introp.html"  onclick="window.open('bgm.html')"><div id="introstart">START</div></a>
+	</div>
+
+	<audio autoplay> <source src="New_Land.mp3" type="audio/mp3"> </audio>
+
+<iframe src="New_Land.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
+<audio id="audio" autoplay>
+<source src="New_Land.mp3">
+</audio>
+
+
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

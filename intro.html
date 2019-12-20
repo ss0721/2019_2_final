@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>친구가 되어줄래..?</title>
+
+	<style type="text/css">
+		@font-face { font-family: 'Sam3KRFont'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		body{margin: 0; font-family: 'Sam3KRFont'; width: 80%; background-color: black; margin: auto; height: 100%; margin-top: 3%; margin-bottom: 3%;}
+
+		.option{position: absolute; top: 0; left: 0;}
+		#int1{width: 100%;}
+		#intp{position: absolute; top: 30%; left: 67%; color: white; font-size: 1.5em;}
+		#int11{width: 300px; position: absolute;top: 320px; left: 630px; cursor: pointer;}
+
+		#int2{width: 300px; position: absolute;top: 320px; left: 630px; display: none;}
+		#int22{width: 650px; position: absolute; top: 580px; left: 200px; display: none;}
+		#intp2{margin-left: 80px; width: 650px; font-size: 3em; color: black; position: absolute; top: 570px; left: 200px; display: none; cursor: pointer;}
+
+		#int3{width: 100px;position: absolute; top: 100px; left: 700px; display: none;}
+		#int33{width: 200px; position: absolute; top: 340px; left: 400px; display: none;}
+		#intp3{width: 200px; color: black; position: absolute; top: 337px; left: 400px; padding-left: 20px; display: none; cursor: pointer; margin-left: 10px;}
+
+		#int4{width: 200px; position: absolute; top: 340px; left: 400px; display: none;}
+		#intp4{width: 200px; color: black; position: absolute; top: 335px; left: 400px; padding-left: 20px;  cursor: pointer; display: none;}
+
+		#int5{width: 350px; position: absolute; top: 180px; left: 530px; display: none;}
+		#intp5{margin-left: 45px; width: 650px; font-size: 2.5em; color: black; position: absolute; top: 175px; left: 510px; cursor: pointer; display: none;}
+
+		#stay{width: 20%; margin: 40%; display: none;}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="intro1.png" id="int1">
+		<p id="intp">게임 화면을 눌러주세요.</p>
+		<div>
+			<img src="intro1-1.png" id="int11">
+		</div>
+
+
+		<div class="option">
+			<img src="intro2.png" id="int2">
+			<img src="intro22.png" id="int22">
+			<p id="intp2">아싸 이겼다!!! ▼</p>
+		</div>
+
+		<div class="option">
+			<img src="int3.png" id="int3">
+			<img src="int33.png" id="int33">
+			<p id="intp3">흑흑..외로워. ▼</p>
+			<img src="stay.png" id="stay">
+		</div>
+
+		<div class="option">
+			<img src="int4.png" id="int4">
+			<p id="intp4">친구가 되어줄래? ▼</p>
+		</div>
+
+		<div class="option">
+			<img src="int5.png" id="int5">
+			<a href="start.html">
+			<p id="intp5">넌 누구야?▼</p></a>
+		</div>
+	</div>
+
+</body>
+
+	<script type="text/javascript">
+		int11.onclick = function (){
+			int11.style.display = "none";
+			intp.style.display = "none";
+			int2.style.display = "block";
+			int22.style.display = "block";
+			intp2.style.display = "block";
+		}
+
+		intp2.onclick = function(){
+			int2.style.display = "none";
+			int22.style.display = "none";
+			intp2.style.display = "none";
+			int3.style.display = "block";
+			int33.style.display = "block";
+			intp3.style.display = "block";
+		}
+
+		intp3.onclick = function(){
+			int33.style.display = "none";
+			int3.style.display = "none";
+			intp3.style.display = "none";
+			int4.style.display = "block";
+			intp4.style.display = "block";
+		}
+
+		intp4.onclick = function (){
+			int4.style.display = "none";
+			intp4.style.display = "none";
+			int5.style.display = "block";
+			intp5.style.display = "block";
+		}
+	</script>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>친구가 되어줄래..?</title>
+
+	<style type="text/css">
+		@font-face { font-family: 'Sam3KRFont'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		body{margin: 0; font-family: 'Sam3KRFont'; width: 100%; background-color: black; margin: auto; height: 100%; margin-top: 3%; margin-bottom: 3%; color: white;}
+
+		#topblack{width: 100%; height: 50px; background-color: black; z-index: 8; display: block; position: fixed;top: 0;}
+		#bar{width: 100%; position: fixed; height: 500px; top: 700px; z-index: 8; display: block; position: fixed; background-color: black;}
+
+		#per{width: 80%; margin: auto;}
+
+		#back{width: 100%; z-index: -1;}
+
+		.do{width: 250px; z-index: 3; margin-left: 40px;}
+
+		.click{position: absolute; top: 0; left: 0; font-size: 30px; z-index: 2; color: black;}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div id="per">
+
+		<div id="topblack">
+		<p>색깔에 맞는 두더지를 눌러보세요!</p></div>
+
+			<div style="position: relative;">
+				<div style="padding-top: 320px; padding-left: 130px; ">
+					<img src="do1.png" class="do" id="do1">
+					<img src="do2.png" class="do" id="do2">
+					<img src="do3.png" class="do" id="do3">
+				</div>
+				<div style="padding-top: 50px; margin-left: 230px;">
+					<img src="do4.png" class="do" id="do4">
+					<img src="do5.png" class="do" id="do5">
+					<img src="do6.png" class="do" id="do6">
+				</div>
+
+				<img src="talkk.png" id="tak1" style="position: absolute; width: 200px; top: 400px; left: 150px;">
+				<img src="talkk.png" id="tak2" style="position: absolute; width: 200px; top: 235px; left: 120px; opacity: 0;">
+				<img src="talkk.png" id="tak3" style="position: absolute; width: 200px; top: 235px; left: 450px; opacity: 0;">
+				<img src="talkk.png" id="tak4" style="position: absolute; width: 200px; top: 235px; left: 750px; opacity: 0;">
+				<img src="talkk.png" id="tak5" style="position: absolute; width: 200px; top: 400px; left: 450px; opacity: 0;">
+				<img src="talkk.png" id="tak6" style="position: absolute; width: 200px; top: 400px; left: 850px; opacity: 0;">
+
+				<p id="cli1" style="position: absolute; color: black; top: 403px; left: 162px; opacity: 1; cursor: pointer;">안녕, 나는 mole이야.▼</p>
+				<p id="cli2" style="position: absolute; color: black; top: 403px; left: 170px; display: none;">green mole을 눌러봐.</p>
+				<p id="cli3" style="position: absolute; color: black; top: 237px; left: 475px; opacity: 0;">pink mole을 눌러봐.</p>
+				<p id="cli4" style="position: absolute; color: black; top: 403px; left: 870px; opacity: 0;">orange mole을 눌러봐.</p>
+				<p id="cli5" style="position: absolute; color: black; top: 237px; left: 143px; opacity: 0;">blue mole을 눌러봐.</p>
+				<p id="cli6" style="position: absolute; color: black; top: 403px; left: 480px; opacity: 0;">red mole을 눌러봐.</p>
+				<p id="cli7" style="position: absolute; color: black; top: 230px; left: 783px; font-size: 15px; line-height: 18px; opacity: 0;" onclick="location.href='start2.html';">두더지 게임이였어,<br> 놀아줘서 고마워!▼</p>
+
+				
+
+				<img src="4back.png" id="back" style="position: absolute;top: 0; left: 0; width: 100%;">
+			
+			</div>
+
+
+		<div id="bar">
+		<div style="cursor: pointer; font-size: 30px; position: relative; left: 1100px; top: 10px;" onclick="location.href='start2.html';">뒤로가기</div></div>
+	</div>
+
+	<script type="text/javascript">
+		cli1.onclick = function(){
+			cli2.style.display ="block";
+			cli1.style.opacity = "0";
+			do2.style.cursor= "pointer";
+
+		}
+
+		do2.onclick = function(){
+			cli2.style.display ="none";
+			cli1.style.opacity = "0";
+			tak1.style.opacity="0";
+			tak3.style.opacity = "1";
+			cli3.style.opacity = "1";
+			do6.style.cursor= "pointer"
+			do2.style.cursor= "default"
+
+		}
+
+		do6.onclick = function(){
+			tak3.style.opacity ="0";
+			cli3.style.opacity = "0";
+			tak6.style.opacity = "1";
+			cli4.style.opacity = "1";
+			do6.style.cursor= "default"
+			do1.style.cursor= "pointer"
+
+		}
+
+		do1.onclick = function(){
+			tak2.style.opacity ="1";
+			cli5.style.opacity = "1";
+			tak6.style.opacity = "0";
+			cli4.style.opacity = "0";
+			do5.style.cursor= "pointer"
+			do1.style.cursor= "default"
+
+		}
+
+		do5.onclick = function(){
+			tak2.style.opacity ="0";
+			cli5.style.opacity = "0";
+			tak5.style.opacity = "1";
+			cli6.style.opacity = "1";
+			do3.style.cursor= "pointer"
+			do5.style.cursor= "default"
+
+		}
+
+		do3.onclick = function(){
+			tak5.style.opacity ="0";
+			cli6.style.opacity = "0";
+			tak4.style.opacity = "1";
+			cli7.style.opacity = "1";
+			cli7.style.cursor= "pointer"
+			do3.style.cursor= "default"
+
+		}
+
+	</script>
+</body>
+</html>

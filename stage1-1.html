@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>친구가 되어줄래..?</title>
+
+	<style type="text/css">
+		@font-face { font-family: 'Sam3KRFont'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		body{margin: 0; font-family: 'Sam3KRFont'; width: 100%; background-color: black; margin: auto; height: 100%; margin-top: 3%; margin-bottom: 3%; color: white;}
+
+		#topblack{width: 100%; height: 50px; background-color: black; z-index: 8; display: block; position: fixed;top: 0;}
+		#bar{width: 100%; position: fixed; height: 500px; top: 700px; z-index: 8; display: block; position: fixed; background-color: black;}
+		#bar2{width: 100%; position: fixed; height: 500px; top: 700px; z-index: 8; display: block; position: fixed; background-color: black; opacity: 0;}
+
+		#per{width: 80%; margin: auto;}
+
+		#game1{width: 80%; position: absolute;}
+
+		#back1{width: 100%;}
+
+		.apple{width: 11.5%; position: absolute; cursor: pointer;}
+		.apple22{width: 13%; position: absolute; cursor: pointer;}
+		.shadow{width: 11.5%; position: absolute;}
+		.eng{color: black; z-index: 2; font-size: 60px; position: absolute; opacity: 0;}
+
+	</style>
+</head>
+<body>
+
+	<div id="per">
+
+		<div id="topblack">
+		<p>사과를 다 먹어보고 나오는 단어를 눌러보세요!</span></p>
+		</div>
+
+				<div style="position: relative;">
+			<img src="1back.png" id="back1">
+			<img src="apple3.png" class="apple" id="apple1" style="top: 180px; left: 675px; z-index: 3; opacity: 1;">
+			<img src="apple2.png" class="apple22" id="apple2" style="top: 170px; left: 570px; z-index: 3;">
+			<img src="apple4.png" class="apple22" id="apple3" style="top: 160px; left: 500px; z-index: 3;">
+			<img src="apple5.png" class="apple" id="apple4" style="top: 270px; left: 470px; z-index: 3;">
+			<img src="apple5.png" class="apple" id="apple5" style="top: 187px; left: 410px; z-index: 3;">
+			<img src="apple5.png" class="apple" id="apple6" style="top: 390px; left: 470px; z-index: 3;">
+			<img src="apple4.png" class="apple22" id="apple7" style="top: 320px; left: 370px; z-index: 3;">
+			<img src="apple3.png" class="apple" id="apple8" style="top: 370px; left: 570px; z-index: 3;">
+			<img src="apple3.png" class="apple" id="apple9" style="top: 50px; left: 455px; z-index: 3;">
+			<img src="apple5.png" class="apple" id="apple10" style="top: 415px; left: 355px; z-index: 3;">
+			<img src="apple2.png" class="apple22" id="apple11" style="top: 270px; left: 570px; z-index: 3;">
+			<img src="apple3.png" class="apple" id="apple12" style="top: 350px; left: 250px; z-index: 3;">
+			<img src="apple1.png" class="apple" id="apple13" style="top: 230px; left: 290px; z-index: 3;">
+			<img src="apple2.png" class="apple22" id="apple14" style="top: 130px; left: 305px; z-index: 3;">
+			<img src="apple2.png" class="apple22" id="apple15" style="top: 360px; left: 705px; z-index: 3;">
+			<img src="apple5.png" class="apple" id="apple16" style="top: 265px; left: 665px; z-index: 3;">
+			<img src="apple4.png" class="apple22" id="apple17" style="top: 470px; left: 655px; z-index: 3;">
+			<img src="apple1.png" class="apple" id="apple18" style="top: 140px; left: 795px; z-index: 3;">
+			<img src="apple1.png" class="apple" id="apple19" style="top: 255px; left: 779px; z-index: 3;">
+
+
+			<img src="shadow1.png" class="shadow" id="apple1s" style="top: 200px; left: 695px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple2s" style="top: 190px; left: 590px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple3s" style="top: 180px; left: 520px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple4s" style="top: 290px; left: 490px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple5s" style="top: 207px; left: 430px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple6s" style="top: 410px; left: 490px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple7s" style="top: 340px; left: 390px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple8s" style="top: 390px; left: 590px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple9s" style="top: 70px; left: 475px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple10s"  style="top: 435px; left: 375px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple11s" style="top: 290px; left: 590px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple12s" style="top: 370px; left: 270px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple13s" style="top: 250px; left: 310px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple14s" style="top: 150px; left: 325px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple15s" style="top: 380px; left: 725px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple16s" style="top: 285px; left: 685px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple17s" style="top: 490px; left: 675px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple18s" style="top: 160px; left: 815px; z-index: 2;">
+			<img src="shadow1.png" class="shadow" id="apple19s" style="top: 275px; left: 799px; z-index: 2;">
+
+			<img src="shadow1.png" id="bigapple1" style="position: absolute; width: 19%; top: 340px; left: 520px; z-index: 1; opacity: 0;">
+			<img src="apple5.png" id="bigapple2" style="position: absolute; width: 20%; top: 300px; left: 480px; z-index: 1; opacity: 0;">
+			
+
+			<div id="bigapple" style="position: absolute; top: 100px; left: 400px; cursor: pointer;">
+			<p id="alpaa" class="eng" >A</p>
+			<p id="alpap" class="eng" style="left: 100px;">P</p>
+			<p id="alpap2" class="eng" style="left: 200px;">P</p>
+			<p id="alpal" class="eng" style="left: 300px;">L</p>
+			<p id="alpae" class="eng" style="left: 400px;">E</p>
+			</div>
+
+			<img src="talkk.png" id="talkk"  style="width: 200px; position: absolute; top: 120px; left: 100px; z-index: 2; opacity: 0;">
+			<img src="qjffp1.png" id="qjffp1" style="position: absolute; z-index: 2; top: 200px; left: 260px; width: 100px; cursor: pointer;">
+			<p id="talkk2" style="position: absolute; top: 120px; left: 115px; z-index: 2; color: black; font-size: 10px; font-size: 18px; opacity: 0;">안녕, 나는 larva야.</p>
+			<p style="position: absolute; top: 290px; left: 300px; z-index: 2; color: white; font-size: 10px;">애벌레를 눌러보세요.</p>
+
+			<img src="1back.png" style="position: absolute;top: 0; left: 0; width: 100%;">
+				</div>
+
+		<div id="bar2">
+		<div style="cursor: pointer; font-size: 30px; position: relative; left: 1000px; top: 10px;" onclick="location.href='start2.html';">다음 문으로!</div></div>
+	</div>
+		<div id="bar">
+		<div style="cursor: pointer; font-size: 30px; position: relative; left: 1200px; top: 10px;" onclick="location.href='start2.html';">뒤로가기</div></div>
+	</div>
+
+
+	<script type="text/javascript">
+
+		qjffp1.onclick = function(){
+			talkk.style.opacity = "1";
+			talkk2.style.opacity = "1";
+			bigapple1.style.opacity = "1";
+			bigapple2.style.opacity = "1";
+			bar.style.display ="none";
+			bar2.style.opacity = "1";
+			}
+			
+		apple1.onclick = function(){
+				apple1.style.display = "none";
+				apple1s.style.opacity = "0";
+
+
+		}
+		apple2.onclick = function(){
+			apple2.style.display = "none";
+			apple2s.style.opacity = "0";
+			alpaa.style.opacity = "1";
+			alpaa1.style.opacity = "1";
+
+		}
+		apple3.onclick = function(){
+			apple3.style.display = "none";
+			apple3s.style.opacity = "0";
+
+		}
+		apple4.onclick = function(){
+			apple4.style.display = "none";
+			apple4s.style.opacity = "0";
+			alpae.style.opacity = "1";
+			alpae1.style.opacity = "1";
+
+		}
+		apple5.onclick = function(){
+			apple5.style.display = "none";
+			apple5s.style.opacity = "0";
+			
+		}
+		apple6.onclick = function(){
+			apple6.style.display = "none";
+			apple6s.style.opacity = "0";
+		}
+		apple7.onclick = function(){
+			apple7.style.display = "none";
+			apple7s.style.opacity = "0";
+		}
+		apple8.onclick = function(){
+			apple8.style.display = "none";
+			apple8s.style.opacity = "0";
+		}
+		apple9.onclick = function(){
+			apple9.style.display = "none";
+			apple9s.style.opacity = "0";
+			alpap.style.opacity = "1";
+			alpap1.style.opacity = "1";
+		}
+		apple10.onclick = function(){
+			apple10.style.display = "none";
+			apple10s.style.opacity = "0";
+		}
+		apple11.onclick = function(){
+			apple11.style.display = "none";
+			apple11s.style.opacity = "0";
+		}
+		apple12.onclick = function(){
+			apple12.style.display = "none";
+			apple12s.style.opacity = "0";
+		}
+		apple13.onclick = function(){
+			apple13.style.display = "none";
+			apple13s.style.opacity = "0";
+		}
+		apple14.onclick = function(){
+			apple14.style.display = "none";
+			apple14s.style.opacity = "0";
+		}
+		apple15.onclick = function(){
+			apple15.style.display = "none";
+			apple15s.style.opacity = "0";
+			alpap2.style.opacity = "1";
+			alpap22.style.opacity = "1";
+		}
+		apple16.onclick = function(){
+			apple16.style.display = "none";
+			apple16s.style.opacity = "0";
+		}
+		apple17.onclick = function(){
+			apple17.style.display = "none";
+			apple17s.style.opacity = "0";
+		}
+		apple18.onclick = function(){
+			apple18.style.display = "none";
+			apple18s.style.opacity = "0";
+			alpal.style.opacity = "1";
+			alpal1.style.opacity = "1";
+		}
+		apple19.onclick = function(){
+			apple19.style.display = "none";
+			apple19s.style.opacity = "0";
+			talk2.style.opacity = "1";
+		}
+	</script>
+</body>
+</html>
